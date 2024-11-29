@@ -28,7 +28,6 @@ public class ListPerformanceTest
         endTime = System.nanoTime();
         long getTime = endTime - startTime;
 
-        // Тестирование удаления элементов
         startTime = System.nanoTime();
         for (int i = TEST_SIZE - 1; i >= 0; i--) {
             list.remove(i);
@@ -36,7 +35,6 @@ public class ListPerformanceTest
         endTime = System.nanoTime();
         long removeTime = endTime - startTime;
 
-        // Вывод результатов
         System.out.printf("%s:\n", listType);
         System.out.printf("  add: %d ms\n", addTime / 100000);
         System.out.printf("  get: %d ms\n", getTime / 100000);
